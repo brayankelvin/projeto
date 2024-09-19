@@ -18,10 +18,14 @@ header .container {
 
 header li {
     display: inline;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-left: 16px;
 }
 
 header li a {
     color: #f5f6fa;
+    text-decoration: none;
 }
 
 .container {
@@ -108,11 +112,9 @@ section h2 {
 }
 
 #technology {
-<<<<<<< HEAD
     background-color: #d4d7da;
-=======
+
     background-color: #717273;
->>>>>>> e46cca18e05177abfc370da00f7bd6b380b0e3ab
 }
 
 #technology .articles article a {
