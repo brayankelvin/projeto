@@ -108,7 +108,11 @@ section h2 {
 }
 
 #technology {
+<<<<<<< HEAD
     background-color: #d4d7da;
+=======
+    background-color: #717273;
+>>>>>>> e46cca18e05177abfc370da00f7bd6b380b0e3ab
 }
 
 #technology .articles article a {
