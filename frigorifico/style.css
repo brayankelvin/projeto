@@ -1,0 +1,192 @@
+/* Estilos Gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(logo.jpeg) center no-repeat fixed, rgba(0, 0, 0, 0.8);
+    font-family: Arial, sans-serif;
+    color: #fff;
+    line-height: 1.6;
+}
+
+/* Texto com fundo preto transparente */
+p, h1, h2, h3, h4, h5, h6, span, li {
+    background-color: rgba(70, 70, 70, 0.301);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+/* Cabeçalho */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    width: 100%;
+    z-index: 1000;
+    background-color: rgba(70, 70, 70, 0.301);
+}
+
+/* Menu de navegação */
+a, a:link, a:visited, a:focus, a:hover, a:active{
+    color:rgb(255, 252, 252);
+    text-decoration:none;
+    cursor: crosshair;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    background-color: transparent; /* Garante o fundo transparente */
+    transition: background 0.3s, color 0.3s; /* Transição suave */
+    border: none;
+}
+
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Fundo branco com transparência no hover */
+    border-radius: 5px; /* Bordas arredondadas */
+}
+
+/* Botão de ação */
+.cta-button {
+    background-color: #ff6600;
+    color: #fff;
+    padding: 12px 25px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #ff3300;
+}
+
+/* Hero */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 40px;
+    height: 100vh;
+}
+
+.hero-text {
+    max-width: 600px;
+}
+
+.hero-image img {
+    max-width: 400px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+/* Secções */
+section {
+    padding: 60px 40px;
+}
+
+.sobre, .servicos {
+    background-color: #1b1b1b;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.servicos-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.servico-card {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.chamada-acao {
+    background-color: #007bff;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #1b1b1b;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .hero-image img {
+        max-width: 100%;
+    }
+
+    .servicos-grid {
+        grid-template-columns: 1fr;
+    }
+
+    section {
+        padding: 40px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 10px 20px;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    nav ul {
+        gap: 5px;
+    }
+
+    .hero-text h1 {
+        font-size: 24px;
+    }
+
+    .hero-text p {
+        font-size: 16px;
+    }
+
+    .btn {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+
+    .hero-image img {
+        max-width: 90%;
+    }
+}
