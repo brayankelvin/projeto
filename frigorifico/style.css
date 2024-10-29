@@ -1,7 +1,8 @@
 /* Estilos Básicos */
 body {
     font-family: Arial, sans-serif;
-    background-color: #fff;
+    background: url('logo.jpeg') no-repeat center center fixed;
+    background-size: cover;
     color: #333;
     margin: 0;
 }
@@ -12,7 +13,9 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: #f8f8f8;
+    position: relative;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
     flex-wrap: wrap;
 }
 
@@ -57,6 +60,12 @@ nav ul li a:hover {
     background-color: #005bb5;
 }
 
+.centered-button {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
 /* Banner de Chamada para Ação */
 .alert-banner {
     background-color: #ff6600;
@@ -65,6 +74,18 @@ nav ul li a:hover {
     padding: 10px;
     font-weight: bold;
     font-size: 1.1em;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.hero-text {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 8px;
 }
 
 /* Serviços */
