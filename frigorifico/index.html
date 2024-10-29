@@ -1,28 +1,23 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
-    <!-- Google Analytics -->
+    <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-8R1K2WKBZ2"></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-8R1K2WKBZ2');
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-8R1K2WKBZ2');
     </script>
-    
-    <!-- Metas e Links -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Especialistas em reparação de frigoríficos em Lisboa e região. Atendemos emergências e realizamos manutenções preventivas com excelência e rapidez.">
+    <meta name="description" content="Serviço especializado em reparação de frigoríficos em Lisboa e região. Atendimento de emergência e soluções rápidas para frigoríficos de todos os tipos.">
     <meta name="theme-color" content="#ffffff">
-    <title>Reparação de Frigoríficos | Lisboa e Região</title>
+    <title>Serviço de Reparação de Frigoríficos | Lisboa e Região</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="manifest" href="/manifest.json">
-    <link rel="apple-touch-icon" href="/icon-192x192.png">
 </head>
 
 <body>
-    <!-- Cabeçalho -->
     <header id="header">
         <div class="logo">Reparos de Refrigeradores</div>
         <nav>
@@ -37,50 +32,42 @@
     </header>
 
     <!-- Banner de Chamada para Ação -->
-    <div class="alert-banner">
-        <p>Atendimento de Emergência em Lisboa e Região! Ligue agora para reparo imediato.</p>
-    </div>
+    <div class="alert-banner">Atendimento de Emergência 24h em Lisboa e Região!</div>
 
     <main>
-        <!-- Seção Hero -->
         <section class="hero" id="hero">
             <div class="hero-text">
                 <h1>Reparação de Frigoríficos em Lisboa e Região</h1>
-                <p>Profissionais especializados para atender emergências e realizar manutenções preventivas com rapidez e qualidade.</p>
+                <p>Profissionais especializados para atender emergências e realizar manutenções preventivas para o seu conforto e segurança.</p>
                 <a href="tel:+351965414992" class="cta-button">Solicite um Orçamento</a>
             </div>
         </section>
 
-        <!-- Sobre Nós -->
         <section class="about" id="about">
             <h2>Sobre <span>Nós</span></h2>
-            <div class="about-content">
-                <p>Somos uma empresa dedicada à reparação de frigoríficos, atendendo Lisboa e arredores. Nossa equipe é composta por técnicos experientes e altamente qualificados, prontos para resolver qualquer problema que seu frigorífico possa apresentar, seja em uma emergência ou manutenção preventiva.</p>
-                <p>Nosso compromisso é garantir que seu refrigerador funcione com eficiência e segurança, oferecendo soluções personalizadas e um atendimento de qualidade. Confiança, rapidez e atenção aos detalhes são os pilares que sustentam nosso trabalho.</p>
-            </div>
+            <p>Com anos de experiência e uma equipe dedicada, oferecemos serviços rápidos e eficazes de reparo de frigoríficos. Atendemos emergências em Lisboa e região, com técnicos treinados para resolver qualquer problema no seu refrigerador.</p>
+            <p>Nosso objetivo é proporcionar conforto e tranquilidade, garantindo que o seu frigorífico funcione sempre com a máxima eficiência e segurança.</p>
         </section>
 
-        <!-- Serviços -->
         <section class="services" id="services">
             <h2>Nossos Serviços</h2>
             <div class="services-grid">
                 <div class="service-card">
                     <h3>Reparo Completo de Frigoríficos</h3>
-                    <p>Oferecemos diagnósticos precisos e soluções garantidas. Utilizamos peças de alta qualidade para restaurar o desempenho do seu frigorífico, garantindo que ele funcione como novo.</p>
+                    <p>Diagnóstico preciso e reparo garantido, utilizando peças de alta qualidade para restaurar o desempenho do seu frigorífico.</p>
                 </div>
                 <div class="service-card">
                     <h3>Manutenção Preventiva</h3>
-                    <p>Evite problemas futuros com nossa manutenção preventiva. Com ela, prolongamos a vida útil do seu equipamento e mantemos o desempenho ideal do frigorífico.</p>
+                    <p>Evite problemas futuros e mantenha o seu frigorífico em alta performance com nossa manutenção preventiva.</p>
                 </div>
                 <div class="service-card">
                     <h3>Reparos de Emergência</h3>
-                    <p>Estamos disponíveis para emergências em Lisboa e região. Garantimos atendimento rápido e eficaz para que seu frigorífico volte a funcionar o mais rápido possível.</p>
+                    <p>Disponível para emergências em Lisboa e região, com serviços rápidos para garantir o funcionamento do seu equipamento.</p>
                 </div>
             </div>
         </section>
     </main>
 
-    <!-- Rodapé -->
     <footer id="contact">
         <p>© 2024 Serviço de Reparo de Refrigeradores. Todos os direitos reservados.</p>
         <p>Fale conosco: <a href="tel:+351965414992">+351 965 414 992</a></p>
@@ -90,8 +77,8 @@
     <script>
         if ('serviceWorker' in navigator) {
             navigator.serviceWorker.register('/service-worker.js')
-            .then((registration) => console.log('Service Worker registrado com sucesso:', registration))
-            .catch((error) => console.log('Falha ao registrar o Service Worker:', error));
+            .then((registration) => console.log('Service Worker registrado:', registration))
+            .catch((error) => console.log('Erro ao registrar Service Worker:', error));
         }
     </script>
 </body>
