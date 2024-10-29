@@ -21,6 +21,12 @@ header {
     font-weight: bold;
 }
 
+nav {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
 nav ul {
     display: flex;
     list-style: none;
@@ -69,19 +75,21 @@ nav ul li a:hover {
 
 /* Responsividade */
 @media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
     nav ul {
         flex-direction: column;
         align-items: center;
         gap: 10px;
         width: 100%;
+        margin-top: 10px;
     }
 
     .cta-button {
         margin-top: 10px;
-    }
-
-    header {
-        flex-direction: column;
-        align-items: center;
     }
 }
