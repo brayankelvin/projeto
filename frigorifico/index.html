@@ -5,34 +5,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Descrição concisa e atraente do conteúdo da página para melhorar SEO e ajudar os usuários a entenderem o tema do site.">
     <meta name="theme-color" content="#ffffff">
-    <title>Reparo de Frigorífico</title>
+    <title>Reparo de Frigorífico Grande Lisboa</title>
+    <link rel="stylesheet" href="style.css">
 
     <!-- Link para Manifesto e Ícone para iOS -->
     <link rel="manifest" href="/manifest.json">
     <link rel="apple-touch-icon" href="/icon-192x192.png">
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <h1>Bem-vindo ao Serviço de Reparo de Frigoríficos</h1>
-    </header>
+    </head>
+    <body>
+        <header id="header">
+            <div class="logo">Reparos de Refrigeradores</div>
+            <nav>
+                <a href="#hero">Início</a>
+                <a href="#services">Serviços</a>
+                <a href="#about">Sobre Nós</a>
+                <a href="#contact">Contato</a>
+            </nav>
+            <a href="tel:+351965414992" class="cta-button">Fale Conosco</a>
+        </header>
     
-    <section class="hero">
-        <h1>Conserto de Frigoríficos</h1>
-        <p>Serviço rápido, confiável e ao seu alcance.</p>
-        <button class="cta-button">Entre em Contato</button>
-    </section>
-
-    <section class="about">
-        <h2>Sobre Nós</h2>
-        <p>Somos especialistas em reparo de frigoríficos com anos de experiência.</p>
-    </section>
-
-    <footer class="footer">
-        <p>Contato: (99) 99999-9999</p>
-    </footer>
+        <section class="hero" id="hero">
+            <div class="hero-image"></div>
+            <div class="hero-text">
+                <h1>Seu Refrigerador Sempre em Forma!</h1>
+                <p>Profissionais de confiança, soluções rápidas e eficientes – tudo para que seu refrigerador funcione como novo, sempre que você precisar!</p>
+                <a href="tel:+351965414992" class="cta-button">Solicite um Orçamento</a>
+            </div>
+        </section>
+    
+        <section class="about" id="about">
+            <h2>Sobre <span>Nós</span></h2>
+            <div class="about-content">
+                <p>Com uma equipe experiente e altamente treinada, oferecemos o que há de melhor em manutenção de refrigeradores. Nossos técnicos utilizam tecnologia de ponta e peças de alta qualidade para que seu equipamento volte a funcionar em perfeitas condições, com total segurança e durabilidade.</p>
+                <p>Disponibilizamos serviços de urgência e manutenções preventivas, cuidando do seu refrigerador para que você nunca tenha preocupações. Segurança, eficiência e seu conforto são nossos compromissos.</p>
+            </div>
+        </section>
+    
+        <section class="services" id="services">
+            <h2>Nossos Serviços</h2>
+            <div class="service-card">
+                <h3>Reparo Completo de Refrigeradores</h3>
+                <p>Diagnóstico preciso e reparo garantido: cuidamos de cada detalhe para restaurar seu refrigerador, usando as melhores peças e técnicas.</p>
+            </div>
+            <div class="service-card">
+                <h3>Manutenção Preventiva</h3>
+                <p>Evite surpresas e aumente a vida útil do seu refrigerador! Com manutenção regular, mantemos seu equipamento sempre em alta performance.</p>
+            </div>
+            <div class="service-card">
+                <h3>Reparos Especializados</h3>
+                <p>Serviços avançados, como troca de compressor e recarga de gás refrigerante, para desempenho ideal e duradouro.</p>
+            </div>
+        </section>
+    
+        <footer id="contact">
+            <p>© 2024 Serviço de Reparo de Refrigeradores. Todos os direitos reservados.</p>
+            <p>Fale com a gente: <a href="tel:+351965414992">+351 965 414 992</a></p>
+        </footer>
 
     <!-- Registro do Service Worker -->
     <script>
