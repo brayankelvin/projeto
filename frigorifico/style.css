@@ -78,7 +78,29 @@ nav ul li a:hover {
     font-weight: bold;
 }
 .img-banner{
-    center/cover no-repeat;
+    widt
+
+    
+    width: 100%; /* Largura total da tela */
+        height: auto; /* Altura ajustada automaticamente */
+        
+
+    display: block; /* Remover espaçamento extra ao redor da imagem */
+    }
+    
+    /* Ajustes Adicionais */
+    body {
+        
+        margi
+    
+        ma
+    margin: 0;
+        
+        paddin
+    
+        pa
+    padding: 0;
+
 }
 .cta-banner-button {
     display: inline-block;
