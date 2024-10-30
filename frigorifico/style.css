@@ -61,8 +61,8 @@ nav ul li a:hover {
 
 /* Banner de Chamada para Ação */
 .alert-banner {
-    background-color: transparent;
-    color: #000000;
+    background-color:     background-color: #636b7442;
+    color: #fff
     text-align: center;
     padding: 10px;
     font-weight: bold;
@@ -122,7 +122,8 @@ nav ul li a:hover {
 .hero {
     padding: 50px 20px;
     text-align: center;
-    color: #fff;
+    color: #000000;
+    background-color: #f8f8f8;
 }
 
 /* Sobre Nós e Serviços */
