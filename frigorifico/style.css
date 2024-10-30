@@ -1,9 +1,9 @@
 /* Estilos Básicos */
 body {
     font-family: Arial, sans-serif;
-    background: url('logo.jpeg') center/cover no-repeat;
     color: #333;
     margin: 0;
+    background: #fff
 }
 
 /* Cabeçalho */
@@ -61,7 +61,7 @@ nav ul li a:hover {
 
 /* Banner de Chamada para Ação */
 .alert-banner {
-    background-color: #ff6600;
+    background-color: transparent;
     color: #fff;
     text-align: center;
     padding: 10px;
@@ -70,14 +70,16 @@ nav ul li a:hover {
 }
 
 .cta-banner {
-    background-color: #0073e6;
+    background-color: #636b7442;
     color: #fff;
     padding: 15px;
     text-align: center;
     font-size: 1.2em;
     font-weight: bold;
 }
-
+.img-banner{
+    center/cover no-repeat;
+}
 .cta-banner-button {
     display: inline-block;
     background-color: #ff6600;
