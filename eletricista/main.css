@@ -1,19 +1,9 @@
-/* Estilos Gerais */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
+/* Estilos Básicos */
 body {
-    background-image: url(ss.jpeg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
     font-family: Arial, sans-serif;
-    background-color: #121212;
-    color: #fff;
-    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    background: #fff;
 }
 
 /* Cabeçalho */
@@ -21,182 +11,130 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 40px;
-    background-color: transparent;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
+    padding: 10px 20px;
+    background-color: #f6aa05;
+    color: #fff;
+    flex-wrap: wrap;
 }
 
 .logo {
-    font-size: 24px;
+    font-size: 1.4em;
     font-weight: bold;
+    color: #fff;
 }
 
 nav ul {
-    list-style: none;
     display: flex;
+    list-style: none;
     gap: 20px;
+    margin: 0;
+    padding: 0;
 }
 
 nav ul li a {
-    color: #fff;
     text-decoration: none;
-    padding: 5px 10px;
-    transition: background 0.3s;
+    color: #fff;
+    font-weight: 500;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background 0.3s ease;
 }
 
 nav ul li a:hover {
-    background-color: #007bff;
-    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
-.btn {
-    background-color: #ff4c00;
+/* Estilo para Botões */
+.cta-button, .cta-banner-button {
+    background-color: #ff6600;
     color: #fff;
-    border-radius: 292px;
-    text-decoration: none;
     padding: 10px 20px;
-    transition: background 0.3s;
+    border-radius: 4px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
 }
 
-.btn:hover {
-    background-color: #e04300;
+.cta-button:hover, .cta-banner-button:hover {
+    background-color: #cc5200;
 }
 
-/* Secção Principal (Hero Section) */
+/* Banner de Chamada para Ação */
+.alert-banner {
+    background-color: #f8f8f8;
+    color: #000000;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.cta-banner {
+    background-color: #f8f8f8;
+    color: #000000;
+    padding: 15px;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.img-banner {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Hero Section */
 .hero {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 100px 40px;
-    background: transparent;
-    height: 100vh;
+    padding: 50px 20px;
+    text-align: center;
+    color: #000000;
+    background-color: #f8f8f8;
 }
 
-.hero-text {
-    max-width: 600px;
-}
-
-.hero-image img {
-    max-width: 400px;
-    border-radius: 10px;
-}
-
-/* Secções */
-section {
-    padding: 60px 40px;
-}
-
-.sobre, .servicos {
-    background-color: #1b1b1b;
-    margin-top: 20px;
+/* Sobre Nós e Serviços */
+.about, .services {
+    padding: 40px 20px;
+    background-color: #f8f8f8;
     text-align: center;
 }
 
-.servicos-grid {
+.services-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
-    margin-top: 20px;
 }
 
-.servico-card {
-    background-color: #333;
+.service-card {
+    background-color: #fff;
     padding: 20px;
-    border-radius: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
 }
 
-.chamada-acao {
-    background-color: #007bff;
+/* Rodapé */
+footer {
+    background-color: #556576;
     color: #fff;
     text-align: center;
-}
-
-footer {
-    text-align: center;
-    background-color: #1b1b1b;
     padding: 20px;
-    margin-top: 20px;
 }
 
-/* Responsividade para telas menores */
+/* Responsividade */
 @media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        padding: 20px;
-    }
-
     nav ul {
         flex-direction: column;
         align-items: center;
         gap: 10px;
+        width: 100%;
     }
 
-    nav ul li a {
-        padding: 10px 20px;
-    }
-
-    .btn {
+    .cta-button {
         margin-top: 10px;
     }
 
-    .hero {
-        flex-direction: column;
-        text-align: center;
-        padding: 20px;
-    }
-
-    .hero-image img {
-        max-width: 100%;
-        margin-top: 20px;
-    }
-
-    .servicos-grid {
-        grid-template-columns: 1fr;
-    }
-
-    section {
-        padding: 40px 20px;
-    }
-
-    .hero-text {
-        max-width: 100%;
-    }
-}
-
-@media (max-width: 480px) {
     header {
-        padding: 10px 20px;
-    }
-
-    .logo {
-        font-size: 20px;
-    }
-
-    nav ul {
-        gap: 5px;
-    }
-
-    nav ul li a {
-        padding: 8px 15px;
-    }
-
-    .hero-text h1 {
-        font-size: 24px;
-    }
-
-    .hero-text p {
-        font-size: 16px;
-    }
-
-    .btn {
-        font-size: 14px;
-        padding: 10px 20px;
-    }
-
-    .hero-image img {
-        max-width: 90%;
+        flex-direction: column;
+        align-items: center;
     }
 }
