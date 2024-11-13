@@ -6,7 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="SOS Eletricista oferece serviços elétricos de emergência 24h em Lisboa e região. Garantimos assistência rápida e confiável para residências e empresas.">
     <meta name="keywords" content="eletricista Lisboa, reparos elétricos Lisboa, emergência elétrica 24h, manutenção elétrica, SOS Eletricista, serviços elétricos">
-    
+    <meta name="google-site-verification" content="0hDG4h6HaF1NCctw72Fs_D6hB1TCVyFL-QIyGzeFCh0" />
+
+    <!-- Google Tag Manager and Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-TH45JCJCXP"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-TH45JCJCXP');
+    </script>
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
     <!-- Google Web Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Roboto:wght@500;700&display=swap" rel="stylesheet">
 
@@ -20,146 +33,127 @@
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
 
-    <!-- Custom Styles -->
     <style>
-        .carousel-item {
-            position: relative;
-            width: 100%;
-            height: 80vh; /* Ajuste da altura da imagem */
+        /* CSS Otimizado */
+        :root {
+            --primary: #1E60AA;
+            --secondary: #FF4917;
+            --light: #EDF1FC;
+            --dark: #17224D;
+            --text-color: #203897;
         }
 
-        .carousel-item img {
+        body {
+            font-family: "Inter", sans-serif;
+            color: var(--text-color);
+            background-color: #fff;
+            line-height: 1.6;
+        }
+
+        a {
+            color: var(--primary);
+            text-decoration: underline;
+        }
+
+        a:hover {
+            color: #184d88;
+        }
+
+        .btn-primary, .btn-secondary {
+            font-weight: 700;
+            transition: all 0.3s ease;
+            color: #FFFFFF;
+        }
+
+        .btn-primary:hover, .btn-secondary:hover {
+            background-color: #184d88;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            loading: lazy;
+        }
+
+        .header-carousel .owl-carousel-item img {
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .header-carousel .owl-carousel-item:hover img {
+            transform: scale(1.05);
+        }
+
+        /* Formatação de imagens de serviço para manter tamanho e proporção */
+        .service-item-top .overflow-hidden img {
             width: 100%;
-            height: 100%;
+            height: 200px; /* Ajuste conforme necessário */
             object-fit: cover;
-        }
-
-        .carousel-item .position-absolute {
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: rgba(0, 0, 0, 0.4);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-        }
-
-        .carousel-item .container {
-            z-index: 2;
-        }
-
-        .carousel-item h1, .carousel-item p {
-            color: white;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-        }
-
-        .carousel-item h1 {
-            font-size: 3rem;
-            margin-bottom: 20px;
-        }
-
-        .carousel-item p {
-            font-size: 1.2rem;
-            margin-bottom: 30px;
-        }
-
-        .carousel-item .btn {
-            padding: 12px 25px;
-            font-size: 1.2rem;
-        }
-
-        /* Responsividade para telas menores */
-        @media (max-width: 768px) {
-            .carousel-item h1 {
-                font-size: 2rem;
-                margin-bottom: 15px;
-            }
-
-            .carousel-item p {
-                font-size: 1rem;
-                margin-bottom: 20px;
-            }
-
-            .carousel-item .btn {
-                font-size: 1rem;
-                padding: 10px 20px;
-            }
-        }
-
-        /* Responsividade para celulares pequenos */
-        @media (max-width: 480px) {
-            .carousel-item h1 {
-                font-size: 1.5rem;
-                margin-bottom: 10px;
-            }
-
-            .carousel-item p {
-                font-size: 0.9rem;
-                margin-bottom: 15px;
-            }
-
-            .carousel-item .btn {
-                font-size: 1rem;
-                padding: 8px 16px;
-            }
-        }
-
-        /* Serviços */
-        .service-item-top {
-            position: relative;
-            overflow: hidden;
-        }
-
-        .service-item-top img {
-            width: 100%;
-            object-fit: cover;
-            height: 250px;
-            transition: transform 0.3s ease;
-        }
-
-        .service-item-top:hover img {
-            transform: scale(1.1);
-        }
-
-        .service-item-top .service-icon {
-            display: inline-block;
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;
-            background-color: #007bff;
-            color: white;
-            font-size: 30px;
-            text-align: center;
-            line-height: 60px;
-            position: absolute;
-            top: 20px;
-            left: 20px;
-        }
-
-        .service-item-top .ps-4 {
-            margin-left: 80px;
-        }
-
-        @media (max-width: 768px) {
-            .service-item-top .service-icon {
-                top: 15px;
-                left: 15px;
-                font-size: 25px;
-                width: 50px;
-                height: 50px;
-            }
-
-            .service-item-top .ps-4 {
-                margin-left: 70px;
-            }
+            border-radius: 8px;
         }
     </style>
 </head>
 
 <body>
-    <!-- Navbar and other sections... -->
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MG6MB54P"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-light d-none d-lg-block">
+        <div class="row align-items-center top-bar">
+            <div class="col-lg-3 col-md-12 text-center text-lg-start">
+                <a href="#" class="navbar-brand m-0 p-0">
+                    <h1 class="text-primary m-0">SOS Eletricista</h1>
+                </a>
+            </div>
+            <div class="col-lg-9 col-md-12 text-end">
+                <div class="h-100 d-inline-flex align-items-center me-4">
+                    <i class="fa fa-map-marker-alt text-primary me-2"></i>
+                    <p class="m-0">Lisboa e Região</p>
+                </div>
+                <div class="h-100 d-inline-flex align-items-center me-4">
+                    <i class="far fa-envelope-open text-primary me-2"></i>
+                </div>
+                <div class="h-100 d-inline-flex align-items-center">
+                    <a class="btn btn-sm-square bg-white text-primary me-1" href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-sm-square bg-white text-primary me-1" href="#"><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-sm-square bg-white text-primary me-1" href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-sm-square bg-white text-primary me-0" href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+    <!-- Navbar Start -->
+    <div class="container-fluid nav-bar bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white p-3 py-lg-0 px-lg-4">
+            <a href="#" class="navbar-brand d-flex align-items-center m-0 p-0 d-lg-none">
+                <h1 class="text-primary m-0">SOS Eletricista</h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="fa fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav me-auto">
+                    <a href="#" class="nav-item nav-link active">Inicio</a>
+                    <a href="#servico" class="nav-item nav-link">Serviços</a>
+                    <a href="#Contato" class="nav-item nav-link">Contato</a>
+                </div>
+                <div class="mt-4 mt-lg-0 me-lg-n4 py-3 px-4 bg-primary d-flex align-items-center">
+                    <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-white" style="width: 45px; height: 45px;">
+                        <i class="fa fa-phone-alt text-primary"></i>
+                    </div>
+                    <div class="ms-3">
+                        <p class="mb-1 text-white">Eletricistas 24h</p>
+                        <a href="tel:+351963145360" class="btn btn-primary btn-lg" onclick="gtag('event', 'conversion', {'send_to': 'AW-CONVERSION_ID'});">LIGUE AGORA</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- Navbar End -->
 
     <!-- Carousel Start -->
     <div class="container-fluid p-0 mb-5">
@@ -171,8 +165,7 @@
                         <div class="container">
                             <div class="row justify-content-center text-center">
                                 <div class="col-12 col-lg-8">
-                                    <h1 class="display-3 text-white mb-4">Garantindo suporte rápido e confiável para todas as necessidades elétricas de residências e empresas.</h1>
-                                    <p class="fs-5 fw-medium text-white mb-4 pb-2">Ligue agora para 963 145 360 para assistência imediata.</p>
+                                    <h1 class="display-3 text-white mb-4">suporte rápido para todas as necessidades elétricas de residências e empresas.</h1>
                                     <a href="tel:+351963145360" class="btn btn-primary py-md-3 px-md-5 me-3">Ligue Agora</a>
                                 </div>
                             </div>
